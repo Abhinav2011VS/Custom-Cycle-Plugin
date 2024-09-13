@@ -1,0 +1,40 @@
+# CustomCyclePlugin Configuration
+
+# Duration of day in ticks (default: 24000 ticks)
+day-length-ticks: 24000
+
+# Duration of night in ticks (default: 12000 ticks)
+night-length-ticks: 12000
+
+# Interval at which the day/night cycle updates (default: 600 ticks)
+cycle-interval-ticks: 600
+
+# Whether to synchronize weather with the day/night cycle
+weather-synchronization: true
+
+# Time at which sunrise occurs (default: 1000)
+sunrise-time: 1000
+
+# Time at which sunset occurs (default: 12000)
+sunset-time: 12000
+
+# Whether to notify players about the cycle updates
+notify-players: true
+
+# Message sent to players when the cycle updates
+notification-message: "The day/night cycle has been updated!"
+
+# Whether to use different settings for different worlds
+world-specific-settings: false
+
+# Multiplier for cycle speed (default: 1.0 means normal speed)
+cycle-speed-multiplier: 1.0
+
+# Extra configuration for dynamic events (additional features)
+events:
+  sunrise:
+    message: "Sunrise event triggered!"
+    command: "/say Sunrise has arrived!"
+  sunset:
+    message: "Sunset event triggered!"
+    command: "/say Sunset is here!"

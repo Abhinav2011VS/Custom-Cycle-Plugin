@@ -1,0 +1,30 @@
+name: CustomCyclePlugin
+version: '1.0'
+main: net.abhinav.ccp.CustomCyclePlugin
+api-version: '1.21'
+load: STARTUP
+authors: [ Abhinav VS ]
+description: "Customizable day and night cycle plugin with various features."
+commands:
+  setcycle:
+    description: "Sets the custom day/night cycle times and interval."
+    usage: "/setcycle <day-length> <night-length> <interval>"
+    permission: customcycle.setcycle
+  settime:
+    description: "Sets the world time to a specific value."
+    usage: "/settime <time>"
+    permission: customcycle.settime
+  querytime:
+    description: "Queries the current world time."
+    usage: "/querytime"
+    permission: customcycle.querytime
+permissions:
+  customcycle.setcycle:
+    description: "Allows use of the /setcycle command."
+    default: op
+  customcycle.settime:
+    description: "Allows use of the /settime command."
+    default: op
+  customcycle.querytime:
+    description: "Allows use of the /querytime command."
+    default: op
